@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>什么是BFC？</title>
+    <link href="/2022/06/23/CSS%E5%9F%BA%E7%A1%80%20-%20%E4%BB%80%E4%B9%88%E6%98%AFBFC%EF%BC%9F/"/>
+    <url>/2022/06/23/CSS%E5%9F%BA%E7%A1%80%20-%20%E4%BB%80%E4%B9%88%E6%98%AFBFC%EF%BC%9F/</url>
+    
+    <content type="html"><![CDATA[<p>BFC(Block Formatting Content) 。 中译： 块级格式化上下文 。</p><p>可以认为是元素的一种特性，仅需了解其触发方式和触发后元素展现的特性即可。</p><p>注意： 下文将触发了 BFC 特性的元素叫 BFC 容器。</p><hr><p><strong>触发方式列举如下：</strong></p><ul><li><p>浮动元素（元素的 float 不是 none）</p></li><li><p>绝对定位元素（元素的 position 为 absolute 或 fixed）</p></li><li><p>行内块 inline block 元素</p></li><li><p>overflow 值不为 visible 的块元素</p></li><li><p>弹性元素（display 为 flex 或 inline-flex 元素的直接子元素, 或添加 display: flow-root）</p></li></ul><p>热知识: html 元素默认触发 BFC。</p><hr><p><strong>触发特性后：</strong></p><ul><li><p>元素将是页面中的一块<strong>独立渲染区域</strong>。</p></li><li><p>区域内元素布局<strong>不会影响外部</strong>。</p></li><li><p><strong>同一个 BFC 容器 下外边距会发生折叠</strong>, <strong>想要避免外边距的重叠，可以将其放在不同的 BFC 容器中。</strong></p></li><li><p><strong>BFC 可以包含浮动的元素（清除浮动）</strong></p></li><li><p><strong>BFC 容器 可以阻止元素被浮动元素覆盖</strong></p></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>CSS</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>CSS 基础</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>AJAX使用</title>
     <link href="/2022/06/22/AJAX/"/>
     <url>/2022/06/22/AJAX/</url>
