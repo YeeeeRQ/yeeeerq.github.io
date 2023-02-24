@@ -16,15 +16,15 @@
   <meta name="author" content="Ray">
   <meta name="keywords" content="">
   
-    <meta name="description" content="DML表数据的 添加|修改|删除 insert | update | delete  添加数据123456789INSERT INTO 表名(列名1, 列名2, ...) VALUES(值1, 值2, ...);指定列 添加数据全部列 添加数据批量 添加&#96;&#96;&#96;sqlINSERT INTO 表名(列名1, 列名2, ...) VALUES(值1, 值2, ...);  123456-- 此写法不推荐">
+    <meta name="description" content="DMLDML（data manipulation language）是数据操纵语言：它们是SELECT、UPDATE、INSERT、DELETE，就象它的名字一样，这4条命令是用来对数据库里的数据进行操作的语言。 表数据的 添加|修改|删除 insert | update | delete  添加数据123456789INSERT INTO 表名(列名1, 列名2, ...) VALUES(值1,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL - DML">
+<meta property="og:title" content="MySQL-DML">
 <meta property="og:url" content="http://example.com/2023/01/10/MySQL%20-%20DML/index.html">
 <meta property="og:site_name" content="洋芋Blog">
-<meta property="og:description" content="DML表数据的 添加|修改|删除 insert | update | delete  添加数据123456789INSERT INTO 表名(列名1, 列名2, ...) VALUES(值1, 值2, ...);指定列 添加数据全部列 添加数据批量 添加&#96;&#96;&#96;sqlINSERT INTO 表名(列名1, 列名2, ...) VALUES(值1, 值2, ...);  123456-- 此写法不推荐">
+<meta property="og:description" content="DMLDML（data manipulation language）是数据操纵语言：它们是SELECT、UPDATE、INSERT、DELETE，就象它的名字一样，这4条命令是用来对数据库里的数据进行操作的语言。 表数据的 添加|修改|删除 insert | update | delete  添加数据123456789INSERT INTO 表名(列名1, 列名2, ...) VALUES(值1,">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-01-10T13:19:11.402Z">
-<meta property="article:modified_time" content="2023-01-10T13:22:50.585Z">
+<meta property="article:modified_time" content="2023-01-11T14:17:54.048Z">
 <meta property="article:author" content="Ray">
 <meta property="article:tag" content="MySQL">
 <meta property="article:tag" content="SQL">
@@ -33,7 +33,7 @@
   
   
   
-  <title>MySQL - DML - 洋芋Blog</title>
+  <title>MySQL-DML - 洋芋Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -198,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="MySQL - DML"></span>
+            <span id="subtitle" data-typed-text="MySQL-DML"></span>
           
         </div>
 
@@ -221,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          605 字
+          706 字
         
       </span>
     
@@ -270,12 +270,13 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">MySQL - DML</h1>
+            <h1 style="display: none">MySQL-DML</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="DML"><a href="#DML" class="headerlink" title="DML"></a>DML</h2><p>表数据的 添加|修改|删除</p>
+                <h2 id="DML"><a href="#DML" class="headerlink" title="DML"></a>DML</h2><p>DML（data manipulation language）是数据操纵语言：它们是SELECT、UPDATE、INSERT、DELETE，就象它的名字一样，这4条命令是用来对数据库里的数据进行操作的语言。</p>
+<p>表数据的 添加|修改|删除</p>
 <p>insert | update | delete</p>
 <hr>
 <h2 id="添加数据"><a href="#添加数据" class="headerlink" title="添加数据"></a>添加数据</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> 表名(列名<span class="hljs-number">1</span>, 列名<span class="hljs-number">2</span>, ...) <span class="hljs-keyword">VALUES</span>(值<span class="hljs-number">1</span>, 值<span class="hljs-number">2</span>, ...);<br><br>指定列 添加数据<br>全部列 添加数据<br><br>批量 添加<br><br>```<span class="hljs-keyword">sql</span><br><span class="hljs-keyword">INSERT</span> <span class="hljs-keyword">INTO</span> 表名(列名<span class="hljs-number">1</span>, 列名<span class="hljs-number">2</span>, ...) <span class="hljs-keyword">VALUES</span>(值<span class="hljs-number">1</span>, 值<span class="hljs-number">2</span>, ...);<br></code></pre></td></tr></table></figure>
@@ -338,7 +339,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>MySQL - DML</div>
+      <div>MySQL-DML</div>
       <div>http://example.com/2023/01/10/MySQL - DML/</div>
     </div>
     <div class="license-meta">
@@ -381,12 +382,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2023/01/11/MySQL%20-%20DQL%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2/" title="MySQL-DQL基础查询">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">MySQL-DQL基础查询</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/10/MySQL%20-%20DDL/" title="MySQL - DDL">
-                        <span class="hidden-mobile">MySQL - DDL</span>
+                      <a href="/2023/01/10/MySQL%20-%20DDL/" title="MySQL-DDL">
+                        <span class="hidden-mobile">MySQL-DDL</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

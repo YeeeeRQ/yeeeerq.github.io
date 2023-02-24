@@ -16,24 +16,24 @@
   <meta name="author" content="Ray">
   <meta name="keywords" content="">
   
-    <meta name="description" content="数据库模式定义语言DDL(Data Definition Language)，是用于描述数据库中要存储的现实世界实体的语言。 CRUD创建 Create查询 Retrieve修改 Update删除 Delete  查看当前数据库 12show databases;SHOW DATABASES;  注释： 12-- 注释     &#x2F;* 注释 *&#x2F;  mysql独有注释 1# 注释   SQL语句主要">
+    <meta name="description" content="DQL – 条件查询12345678910111213141516171819202122232425-- 查询年龄大于20岁的学员信息 select * from stu where age &gt; 20;-- 查询年龄不等于20岁的学员信息 select * from stu where age !&#x3D; 20;select * from stu where age &lt;&gt; 20;--">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL-DDL">
-<meta property="og:url" content="http://example.com/2023/01/10/MySQL%20-%20DDL/index.html">
+<meta property="og:title" content="MySQL-DQL条件查询">
+<meta property="og:url" content="http://example.com/2023/01/11/MySQL%20-%20DQL%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2/index.html">
 <meta property="og:site_name" content="洋芋Blog">
-<meta property="og:description" content="数据库模式定义语言DDL(Data Definition Language)，是用于描述数据库中要存储的现实世界实体的语言。 CRUD创建 Create查询 Retrieve修改 Update删除 Delete  查看当前数据库 12show databases;SHOW DATABASES;  注释： 12-- 注释     &#x2F;* 注释 *&#x2F;  mysql独有注释 1# 注释   SQL语句主要">
+<meta property="og:description" content="DQL – 条件查询12345678910111213141516171819202122232425-- 查询年龄大于20岁的学员信息 select * from stu where age &gt; 20;-- 查询年龄不等于20岁的学员信息 select * from stu where age !&#x3D; 20;select * from stu where age &lt;&gt; 20;--">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-10T12:46:57.393Z">
-<meta property="article:modified_time" content="2023-01-11T14:17:05.075Z">
+<meta property="article:published_time" content="2023-01-11T13:54:04.973Z">
+<meta property="article:modified_time" content="2023-01-11T14:12:59.050Z">
 <meta property="article:author" content="Ray">
 <meta property="article:tag" content="MySQL">
 <meta property="article:tag" content="SQL">
-<meta property="article:tag" content="DDL">
+<meta property="article:tag" content="DQL">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>MySQL-DDL - 洋芋Blog</title>
+  <title>MySQL-DQL条件查询 - 洋芋Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -198,7 +198,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="MySQL-DDL"></span>
+            <span id="subtitle" data-typed-text="MySQL-DQL条件查询"></span>
           
         </div>
 
@@ -209,8 +209,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-10 20:46" pubdate>
-          2023年1月10日 晚上
+        <time datetime="2023-01-11 21:54" pubdate>
+          2023年1月11日 晚上
         </time>
       </span>
     
@@ -221,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          991 字
         
       </span>
     
@@ -232,7 +232,7 @@
         
         
         
-          11 分钟
+          9 分钟
         
       </span>
     
@@ -270,43 +270,14 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">MySQL-DDL</h1>
+            <h1 style="display: none">MySQL-DQL条件查询</h1>
             
             
               <div class="markdown-body">
                 
-                <p>数据库模式定义语言DDL(Data Definition Language)，是用于描述数据库中要存储的现实世界实体的语言。</p>
-<h2 id="CRUD"><a href="#CRUD" class="headerlink" title="CRUD"></a>CRUD</h2><p>创建 Create<br>查询 Retrieve<br>修改 Update<br>删除 Delete</p>
-<hr>
-<p>查看当前数据库</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">show</span> databases;<br><span class="hljs-keyword">SHOW</span> DATABASES;<br></code></pre></td></tr></table></figure>
+                <h2 id="DQL-–-条件查询"><a href="#DQL-–-条件查询" class="headerlink" title="DQL – 条件查询"></a>DQL – 条件查询</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-comment">-- 查询年龄大于20岁的学员信息 </span><br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> age <span class="hljs-operator">&gt;</span> <span class="hljs-number">20</span>;<br><br><span class="hljs-comment">-- 查询年龄不等于20岁的学员信息 </span><br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> age <span class="hljs-operator">!=</span> <span class="hljs-number">20</span>;<br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> age <span class="hljs-operator">&lt;&gt;</span> <span class="hljs-number">20</span>;<br><br><span class="hljs-comment">-- 查询年龄大于等于20和小于等于30岁的学员</span><br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> age <span class="hljs-operator">&gt;=</span> <span class="hljs-number">20</span> <span class="hljs-operator">&amp;&amp;</span> age <span class="hljs-operator">&lt;=</span> <span class="hljs-number">30</span>;<br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> age <span class="hljs-operator">&gt;=</span> <span class="hljs-number">20</span> <span class="hljs-keyword">and</span> age <span class="hljs-operator">&lt;=</span> <span class="hljs-number">30</span>; <span class="hljs-comment">-- 推荐使用</span><br><br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> <span class="hljs-keyword">BETWEEN</span> <span class="hljs-number">20</span> <span class="hljs-keyword">AND</span> <span class="hljs-number">30</span>; <br><br><span class="hljs-comment">-- 查询入学日期在&#x27;1998-09-01&#x27;-&#x27;1999-09-01&#x27;之间的学员信息</span><br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> hire_date <span class="hljs-keyword">BETWEEN</span> <span class="hljs-string">&#x27;1998-09-01&#x27;</span> <span class="hljs-keyword">AND</span> <span class="hljs-string">&#x27;1999-09-01&#x27;</span><br><br><span class="hljs-comment">-- 查询年龄等于18岁 或者 年龄等于20岁 或者 年龄等于22岁的学员信息</span><br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> age <span class="hljs-operator">=</span> <span class="hljs-number">18</span> <span class="hljs-keyword">or</span> age <span class="hljs-operator">=</span> <span class="hljs-number">20</span> <span class="hljs-keyword">or</span> age <span class="hljs-operator">=</span> <span class="hljs-number">22</span>;<br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> age <span class="hljs-keyword">in</span> (<span class="hljs-number">18</span>, <span class="hljs-number">20</span>, <span class="hljs-number">22</span>);<br><br><span class="hljs-comment">-- 查询英语成绩为null的学员信息</span><br><span class="hljs-comment">-- 注意： null值的比较不能使用 = 或 != ，需要使用 is 和 is not</span><br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> english <span class="hljs-operator">=</span> <span class="hljs-keyword">null</span>;<br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> english <span class="hljs-keyword">is</span> <span class="hljs-keyword">null</span>;<br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> english <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">null</span>;<br></code></pre></td></tr></table></figure>
 
-<p>注释：</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-comment">-- 注释     </span><br><span class="hljs-comment">/* 注释 */</span><br></code></pre></td></tr></table></figure>
-
-<p>mysql独有注释</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"># 注释<br></code></pre></td></tr></table></figure>
-
-<hr>
-<p>SQL语句主要分类：</p>
-<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs text">DDL <br>DML <br>DQL <br>DCL <br><br>定义<br>操作<br>查询<br>控制<br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="DDL"><a href="#DDL" class="headerlink" title="DDL"></a>DDL</h2><p>主要用于操作 数据库 &amp; 表</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">SHOW</span> DATABASES;<br><br><span class="hljs-keyword">CREATE</span> DATABASE DB1;<br><br><span class="hljs-keyword">CREATE</span> DATABASE if <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span> DB1;<br><br><span class="hljs-keyword">CREATE</span> DATABASE if <span class="hljs-keyword">not</span> <span class="hljs-keyword">exists</span> DB2;<br><br><span class="hljs-keyword">DROP</span> DATABASE DB2;<br><br><span class="hljs-keyword">DROP</span> DATABASE if <span class="hljs-keyword">exists</span> DB2;<br><br>USE DE2; # 使用数据库<br><br><span class="hljs-keyword">SELECT</span> DATABASE(); # 查看当前使用的数据库<br></code></pre></td></tr></table></figure>
-
-<hr>
-<p>DDL 操作表</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">show</span> tables; # 当前数据库下有哪些表<br><br><span class="hljs-keyword">desc</span> table_name; # 查看表的整体结构信息<br><br><span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> TABLENAME(<br>    field_name_1 data_type,<br>    field_name_2 data_type,<br>    field_name_3 data_type,<br>    field_name_4 data_type<br>);<br><br># 最后一行不能加逗号<br><br><span class="hljs-keyword">create</span> <span class="hljs-keyword">table</span> tb_user(<br>    id <span class="hljs-type">int</span>,<br>    username <span class="hljs-type">varchar</span>(<span class="hljs-number">20</span>),<br>    password <span class="hljs-type">varchar</span>(<span class="hljs-number">32</span>)<br>);<br><br><span class="hljs-keyword">show</span> tables;<br><span class="hljs-keyword">desc</span> tb_user;<br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> tb_user;<br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="数据类型-Data-Type"><a href="#数据类型-Data-Type" class="headerlink" title="数据类型 Data Type"></a>数据类型 Data Type</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs text">INT  <br>    age<br><br>DOUBLE <br>    score double(5,2) <br><br>DATE TIME YEAR DATETIME<br><br>CHAR<br>VARCHAR()<br>    name char(10) // 定长， 存储性能高，浪费空间<br>    name varchar(20) // 变长， 存储性能低，节约空间<br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="表创建示例"><a href="#表创建示例" class="headerlink" title="表创建示例"></a>表创建示例</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> student(<br>    id <span class="hljs-type">int</span>,<br>    name <span class="hljs-type">varchar</span>(<span class="hljs-number">10</span>),<br>    gender <span class="hljs-type">char</span>(<span class="hljs-number">1</span>),<br>    birthday <span class="hljs-type">date</span>,<br>    score <span class="hljs-keyword">double</span>(<span class="hljs-number">5</span>,<span class="hljs-number">2</span>),<br>    email <span class="hljs-type">varchar</span>(<span class="hljs-number">64</span>),<br>    tel <span class="hljs-type">varchar</span>(<span class="hljs-number">15</span>),<br>    status tinyint<br>);<br></code></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="修改-amp-删除"><a href="#修改-amp-删除" class="headerlink" title="修改 &amp; 删除"></a>修改 &amp; 删除</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-comment">-- 删除表</span><br><span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> 表名;<br><span class="hljs-keyword">DROP</span> <span class="hljs-keyword">TABLE</span> if <span class="hljs-keyword">exists</span> 表名；<br><br><span class="hljs-comment">-- 修改表名</span><br><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> 表名 RENAME <span class="hljs-keyword">TO</span> 新的表名;<br><br><span class="hljs-comment">-- 添加一列</span><br><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> 表名 <span class="hljs-keyword">ADD</span> 列名 数据类型;<br><br><span class="hljs-comment">-- 修改数据类型</span><br><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> 表名 MODIFY 列名 新数据类型;<br><br><span class="hljs-comment">-- 修改列名和数据类型</span><br><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> 表名 CHANGE 列名 新列名 新数据类型;<br><br><span class="hljs-comment">-- 删除列</span><br><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">TABLE</span> 表名 <span class="hljs-keyword">DROP</span> 列名;<br></code></pre></td></tr></table></figure>
+<h2 id="DQL-–-条件查询-模糊查询LIKE"><a href="#DQL-–-条件查询-模糊查询LIKE" class="headerlink" title="DQL – 条件查询-模糊查询LIKE"></a>DQL – 条件查询-模糊查询LIKE</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-comment">-- LIKE </span><br><span class="hljs-comment">-- 通配符： _单个字符  %多个字符</span><br><br><span class="hljs-comment">-- 查询姓 &#x27;马&#x27; 的学员信息</span><br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span> name <span class="hljs-keyword">like</span> <span class="hljs-string">&#x27;马%&#x27;</span>;<br><br><span class="hljs-comment">-- 查询第二个字是 &#x27;花&#x27; 的学员信息</span><br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span>  name <span class="hljs-keyword">like</span> <span class="hljs-string">&#x27;_花%&#x27;</span>;<br><br><span class="hljs-comment">-- 查询名字中包含 &#x27;德&#x27; 的学员信息</span><br><span class="hljs-keyword">select</span> <span class="hljs-operator">*</span> <span class="hljs-keyword">from</span> stu <span class="hljs-keyword">where</span>  name <span class="hljs-keyword">like</span> <span class="hljs-string">&#x27;%德%&#x27;</span>;<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -344,7 +315,7 @@
       
         <a href="/tags/SQL/">#SQL</a>
       
-        <a href="/tags/DDL/">#DDL</a>
+        <a href="/tags/DQL/">#DQL</a>
       
     </div>
   
@@ -356,8 +327,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>MySQL-DDL</div>
-      <div>http://example.com/2023/01/10/MySQL - DDL/</div>
+      <div>MySQL-DQL条件查询</div>
+      <div>http://example.com/2023/01/11/MySQL - DQL条件查询/</div>
     </div>
     <div class="license-meta">
       
@@ -369,7 +340,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月10日</div>
+          <div>2023年1月11日</div>
         </div>
       
       
@@ -399,9 +370,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/10/MySQL%20-%20DML/" title="MySQL-DML">
+                      <a href="/2023/02/24/Electron%E5%85%A5%E9%97%A8/" title="Electron入门">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">MySQL-DML</span>
+                        <span class="hidden-mobile">Electron入门</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -409,8 +380,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/10/Windows%E4%B8%8BMySQL%E5%AE%89%E8%A3%85/" title="Windows下MySQL安装">
-                        <span class="hidden-mobile">Windows下MySQL安装</span>
+                      <a href="/2023/01/11/MySQL%20-%20DQL%E5%9F%BA%E7%A1%80%E6%9F%A5%E8%AF%A2/" title="MySQL-DQL基础查询">
+                        <span class="hidden-mobile">MySQL-DQL基础查询</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
